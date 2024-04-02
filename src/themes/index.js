@@ -1,4 +1,4 @@
 export const themeColors = {
-  text: "#f97316",
-  bgColor: (opacity) => `rgba(251, 146, 60, ${opacity})`,
+  text: "#2271B3",
+  bgColor: (opacity) => `rgba(34, 113, 179, ${opacity})`,
 };
