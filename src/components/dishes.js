@@ -1,7 +1,7 @@
 import React from "react";
 import * as Icon from "react-native-feather";
 
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 import { formatPrice } from "../utils/formatPrice";
 import { themeColors } from "../themes";
 

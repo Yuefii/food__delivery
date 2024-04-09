@@ -5,6 +5,7 @@ import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { themeColors } from "../themes";
 import Dishes from "../components/dishes";
+import Cart from "../components/cart";
 
 const Restaurant = () => {
   const router = useNavigation();
@@ -12,6 +13,7 @@ const Restaurant = () => {
   let item = params;
   return (
     <View>
+      <Cart />
       <ScrollView>
         <View className="relative">
           <Image className="w-full h-72" source={item.img} />
@@ -53,7 +55,7 @@ const Restaurant = () => {
         <View className="pb-36 bg-white">
           <Text className="px-4 py-4 text-2xl font-semibold">Menu</Text>
           {item.dishes.map((item, index) => {
-            return <Dishes item={{ ...item }} index={index} />;
+            return <Dishes item={{ ...item }} key={index} />;
           })}
         </View>
       </ScrollView>
